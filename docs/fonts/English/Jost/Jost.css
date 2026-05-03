@@ -1,0 +1,168 @@
+/* 
+ * Jost - v3.7
+ * https://indestructibletype.com/Jost.html
+ * Font Weight: 100 - 900
+ * License: SIL Open Font License 1.1(https://github.com/indestructible-type/Jost/blob/master/OFL.txt)
+ */
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-100-hairline-webfont.woff2") format("woff2"),
+         url("jost-100-hairline-webfont.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-100-hairlineitalic-webfont.woff2") format("woff2"),
+         url("jost-100-hairlineitalic-webfont.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-200-thin-webfont.woff2") format("woff2"),
+         url("jost-200-thin-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-200-thinitalic-webfont.woff2") format("woff2"),
+         url("jost-200-thinitalic-webfont.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-300-light-webfont.woff2") format("woff2"),
+         url("jost-300-light-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-300-lightitalic-webfont.woff2") format("woff2"),
+         url("jost-300-lightitalic-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-400-book-webfont.woff2") format("woff2"),
+         url("jost-400-book-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-400-bookitalic-webfont.woff2") format("woff2"),
+         url("jost-400-bookitalic-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-500-medium-webfont.woff2") format("woff2"),
+         url("jost-500-medium-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-500-mediumitalic-webfont.woff2") format("woff2"),
+         url("jost-500-mediumitalic-webfont.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-600-semi-webfont.woff2") format("woff2"),
+         url("jost-600-semi-webfont.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-600-semiitalic-webfont.woff2") format("woff2"),
+         url("jost-600-semiitalic-webfont.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-700-bold-webfont.woff2") format("woff2"),
+         url("jost-700-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-700-bolditalic-webfont.woff2") format("woff2"),
+         url("jost-700-bolditalic-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-800-heavy-webfont.woff2") format("woff2"),
+         url("jost-800-heavy-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-800-heavyitalic-webfont.woff2") format("woff2"),
+         url("jost-800-heavyitalic-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-900-black-webfont.woff2") format("woff2"),
+         url("jost-900-black-webfont.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("jost-900-blackitalic-webfont.woff2") format("woff2"),
+         url("jost-900-blackitalic-webfont.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}

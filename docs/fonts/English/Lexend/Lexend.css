@@ -1,0 +1,69 @@
+/* 
+ * Lexend - v1.2
+ * https://www.lexend.com/
+ * Font Weight: 100 - 900
+ * License: SIL Open Font License 1.1(https://github.com/googlefonts/lexend/blob/main/OFL.txt)
+ */
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-Thin.woff2") format("woff2");
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-ExtraLight.woff2") format("woff2");
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-ExtraBold.woff2") format("woff2");
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lexend";
+    src: url("Lexend-Black.woff2") format("woff2");
+    font-weight: 900;
+    font-display: swap;
+}
