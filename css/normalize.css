@@ -95,7 +95,7 @@ select {
 [type=submit],
 button {
     -webkit-appearance: button;
-    appearance: buttom;
+    appearance: button;
 }
 
 [type=button]::-moz-focus-inner,
@@ -126,10 +126,12 @@ button:-moz-focusring {
 
 [type=search]::-webkit-search-decoration {
     -webkit-appearance: none;
+    appearance: none;
 }
 
 ::-webkit-file-upload-button {
     -webkit-appearance: button;
+    appearance: button;
     font: inherit;
 }
 
