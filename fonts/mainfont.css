@@ -28,7 +28,7 @@
     --FTMLE_main-text-font: var(--FTMLE_main-text-font-primary), var(--FTMLE_main-text-font-fallback);
 
     --FTMLE_code-text-font-primary: "JetBrains Mono";
-    --FTMLE_code-text-font-fallback: "Source Code Pro", "Source Code", monospace, sans-serif;
+    --FTMLE_code-text-font-fallback: "Source Code Pro", "Source Code VF", monospace, sans-serif;
     --FTMLE_code-text-font: var(--FTMLE_code-text-font-primary), var(--FTMLE_code-text-font-fallback);
 }
 
