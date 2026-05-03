@@ -1,4 +1,8 @@
 @charset "UTF-8";
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+@import url("https://cdn.jsdelivr.net/gh/necolas/normalize.css@v8.0.1/normalize.css");
+
 @namespace url("http://www.w3.org/1999/xhtml");
 @namespace svg url("http://www.w3.org/2000/svg");
 @namespace math url("http://www.w3.org/1998/Math/MathML");
@@ -38,7 +42,8 @@ a {
     background-color: transparent;
 }
 
-b,strong {
+b,
+strong {
     font-weight: bolder;
 }
 
