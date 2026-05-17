@@ -40,3 +40,7 @@ div#license-area a[herf^="https://creativecommons.org/licenses/by-nc-sa/" i] {
 div#license-area a[herf^="https://creativecommons.org/licenses/by-nc-nd/" i] {
     --cc-logo: var(--cc-by-nc-nd);
 }
+
+div#license-area a[herf^="https://creativecommons.org/publicdomain/zero/1.0/" i] {
+    --cc-logo: var(--cc-zero);
+}
