@@ -17,30 +17,30 @@ div#license-area a::after {
     background-repeat: no-repeat;
 }
 
-div#license-area a[herf^="https://creativecommons.org/licenses/by/" i] {
+div#license-area a[herf*="//creativecommons.org/licenses/by/" i] {
     --cc-logo: var(--cc-by);
 }
 
-div#license-area a[herf^="https://creativecommons.org/licenses/by-sa/" i] {
+div#license-area a[herf*="//creativecommons.org/licenses/by-sa/" i] {
     --cc-logo: var(--cc-by-sa);
 }
 
-div#license-area a[herf^="https://creativecommons.org/licenses/by-nd/" i] {
+div#license-area a[herf*="//creativecommons.org/licenses/by-nd/" i] {
     --cc-logo: var(--cc-by-nd);
 }
 
-div#license-area a[herf^="https://creativecommons.org/licenses/by-nc/" i] {
+div#license-area a[herf*="//creativecommons.org/licenses/by-nc/" i] {
     --cc-logo: var(--cc-by-nc);
 }
 
-div#license-area a[herf^="https://creativecommons.org/licenses/by-nc-sa/" i] {
+div#license-area a[herf*="//creativecommons.org/licenses/by-nc-sa/" i] {
     --cc-logo: var(--cc-by-nc-sa);
 }
 
-div#license-area a[herf^="https://creativecommons.org/licenses/by-nc-nd/" i] {
+div#license-area a[herf*="//creativecommons.org/licenses/by-nc-nd/" i] {
     --cc-logo: var(--cc-by-nc-nd);
 }
 
-div#license-area a[herf^="https://creativecommons.org/publicdomain/zero/1.0/" i] {
+div#license-area a[herf*="//creativecommons.org/publicdomain/zero/1.0/" i] {
     --cc-logo: var(--cc-zero);
 }
