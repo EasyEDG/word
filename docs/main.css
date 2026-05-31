@@ -328,11 +328,11 @@ div.word.table.long-table table.wiki-content-table > tbody > tr:has(> th):not(:h
 }
 
 div.word.table.style-grid-1a table.wiki-content-table > tbody > tr:nth-child(even of :not([hidden])) {
-    background-color: var(--basalt-secondary-color);
+    background-color: rgb(var(--basalt-secondary-color));
 }
 
 div.word.table.style-grid-1b table.wiki-content-table > tbody > tr:nth-child(odd of :not([hidden])) {
-    background-color: var(--basalt-secondary-color);
+    background-color: rgb(var(--basalt-secondary-color));
 }
 
 /* 版式警告 */
