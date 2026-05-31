@@ -1,0 +1,12 @@
+/* normalize.css */
+@import url("./basalt/normalize.css");
+
+/* bedrock theme */
+@import url("./basalt/p0-base.css");
+@import url("./basalt/p2-core.css");
+@import url("./basalt/p1-fonts.css");
+@import url("./basalt/p3-elements.css");
+@import url("./basalt/p4-action-area.css");
+@import url("./basalt/p5-forum.css");
+@import url("./basalt/p6-svg.css");
+@import url("./basalt/p7-localization.css");
