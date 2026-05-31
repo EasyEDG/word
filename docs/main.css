@@ -1,0 +1,341 @@
+/*                                                                     */
+/*                    ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                    */
+/*                    ┃                        _  ┃                    */
+/*                    ┃                       | | ┃                    */
+/*                    ┃ __      _____  _ __ __| | ┃                    */
+/*                    ┃ \ \ /\ / / _ \| '__/ _` | ┃                    */
+/*                    ┃  \ V  V / (_) | | | (_| | ┃                    */
+/*                    ┃   \_/\_/ \___/|_|  \__,_| ┃                    */
+/*                    ┃                           ┃                    */
+/*                    ┃   ───── COMPONENT ─────   ┃                    */
+/*                    ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━┛                    */
+/*                                                                     */
+/* [2026 Wikidot Theme]                                                */
+/* Version 1.0.0                                                       */
+/*                                                                     */
+/* Licensing Disclosures:                                              */
+/* ┣ Author: EasyEDG                                                   */
+/* ┣ Name: Word SubComponent                                           */
+/* ┣ License: CC BY-SA 4.0 International                               */
+/* ┃ ┗ Deed Link: https://creativecommons.org/licenses/by-sa/4.0/      */
+/* ┣ Source Link:                                                      */
+/* ┃ ┗ https://github.com/EasyEDG/word                                 */
+/* ┗ Additional Notes:                                                 */
+/*   ┗ Built / Based on:                                               */
+/*     ┗ Bedrock Theme by EstrellaYoshte , Liryn & Placeholder McD     */
+/*                                                                     */
+
+/* 防呆设计：导入 基岩 版式 */
+@import url("basalt-core.css");
+
+/* 导入字体 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+
+:root {
+    /* 字体配置 */
+    --header-font-primary: "Lexend", "Noto Sans SC";
+    --UI-font-primary: "Jost", "Noto Sans SC";
+    --body-font-primary: "Inter", "Noto Sans SC";
+    --mono-font-primary: "JetBrains Mono", "Noto Serif SC";
+    --header-font-fallback: sans-serif;
+    --UI-font-fallback: sans-serif;
+    --body-font-fallback: sans-serif;
+    --mono-font-fallback: monospace;
+    
+    /* 配色配置 */
+    --word-theme-color: var(--word-blue-color);
+    --word-blue-color: 24, 90, 189;
+    --word-green-color: 16, 122, 64;
+    --word-orange-color: 196, 63, 29;
+    --word-skyblue-color: 20, 128, 216;
+    --word-violet-color: 104, 20, 157;
+    --word-red-color: 179, 36, 54;
+    
+    /* 动画配置 */
+    --tab-transition: 0.3s ease 0s;
+}
+
+:root:where(:lang(cn)) {
+    /* 文字配置 */
+    --toc-title: "本页内容";
+}
+
+/* 全局 */
+div#page-content {
+    margin-top: 1.5em;
+}
+
+/* TOC */
+div.word.toc div#toc {
+    position: fixed;
+    will-change: transform;
+    right: calc(calc(100% - var(--main-content-width)) * 0.05);
+    left: unset;
+    top: 10%;
+    width: calc(calc(100% - var(--main-content-width)) * 0.4);
+    min-width: 0;
+    padding: 0;
+    background-color: rgb(var(--toc-background-color));
+    border: none;
+    box-sizing: border-box;
+    z-index: 9;
+}
+
+div.word.toc div#toc.floatright {
+    float: none;
+    margin: 0;
+}
+
+div.word.toc div#toc.floatleft {
+    float: none;
+    left: calc(calc(100% - var(--main-content-width)) * 0.05);
+    right: unset;
+    margin: 0;
+}
+
+div.word.toc.content div#toc {
+    position: relative;
+    right: unset;
+    left: unset;
+    top: unset;
+    max-width: calc(var(--main-content-width) * .375);
+    min-width: min(100%, calc(var(--main-content-width) * .25));
+    background-color: rgb(var(--toc-background-color));
+}
+
+div.word.toc.content div#toc, div.word.toc.content div#toc.floatright {
+    float: right;
+    right: 0;
+}
+
+div.word.toc.content:not(.no-clear-float):not(:has( div#toc.floatleft))::after {
+    content: "";
+    display: block;
+    position: static;
+    clear: both;
+    height: 0px;
+    font-size: 1px;
+}
+
+div.word.toc.content div#toc.floatleft {
+    left: 0;
+}
+
+@media all and (max-width: 1600px) {
+    div.word.toc div#toc {
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+        max-width: calc(var(--main-content-width) * .375);
+        min-width: min(100%, calc(var(--main-content-width) * .25));
+        background-color: rgb(var(--toc-background-color));
+    }
+    
+    div.word.toc div#toc, div.word.toc div#toc.floatright {
+        float: right;
+        right: 0;
+    }
+    
+    div.word.toc:not(.no-clear-float):not(:has( div#toc.floatleft))::after {
+        content: "";
+        display: block;
+        position: static;
+        clear: both;
+        height: 0px;
+        font-size: 1px;
+    }
+    
+    div.word.toc div#toc.floatleft {
+        left: 0;
+    }
+}
+
+div.word.toc table[style^="margin:0;"][style*="margin:0;"], table[style^="margin:0;"][style*="margin:0;"] :is(tbody, tr, td) {
+    display: contents;
+}
+
+div.word.toc #toc #toc-action-bar {
+    text-align: end;
+    padding: .625rem;
+    width: 4em;
+}
+
+div.word.toc #toc .title {
+    padding: .625rem .875rem;
+    font-size: 0rem;
+}
+
+div.word.toc #toc .title::before {
+    content: var(--toc-title);
+    text-align: start;
+    font-size: 1.05rem;
+}
+
+div.word.toc #toc-list {
+    padding-inline-start: 0.875rem;
+}
+
+div.word.toc #toc-list div[style] {
+    counter-increment: toc-num;
+    position: relative;
+}
+
+div.word.toc #toc-list div[style*="1em"]::before {
+    content: none;
+}
+
+div.word.toc #toc-list > div {
+    --toc-entry-indent: 0em;
+    margin-left: 0 !important;
+    margin-inline-start: var(--toc-entry-indent) !important;
+}
+
+div.word.toc #toc-list > div[style*="2em"] {
+    --toc-entry-indent: 1em
+}
+
+div.word.toc #toc-list > div[style*="3em"] {
+    --toc-entry-indent: 2em
+}
+
+div.word.toc #toc-list > div[style*="4em"] {
+    font-size: .865em;
+    --toc-entry-indent: 3em
+}
+
+div.word.toc #toc-list > div[style*="5em"] {
+    font-size: .835em;
+    --toc-entry-indent: 4em
+}
+
+div.word.toc #toc-list > div[style*="6em"] {
+    font-size: .775em;
+    --toc-entry-indent: 5.075em
+}
+
+/* Tab View */
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav {
+    font-family: var(--UI-font);
+    background-color: rgb(var(--basalt-background-color));
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li {
+    display: inline-block;
+    position: relative;
+    background-color: rgb(var(--basalt-background-color));
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a {
+    color: rgb(var(--basalt-sub-text-color));
+    transition: all var(--tab-transition);
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a:is(:hover, :focus) {
+    -webkit-text-stroke: 0.3px currentColor;
+    text-shadow: 0 0 0.5px currentColor;
+    color: rgb(var(--basalt-sub-text-color));
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a {
+    -webkit-text-stroke: 0.3px currentColor;
+    text-shadow: 0 0 0.5px currentColor;
+    color: rgb(var(--basalt-main-text-color));
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li::before {
+    content: none;
+    display: none;
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li::after {
+    content: none;
+    display: none;
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a::after {
+    content: "";
+    display: block;
+    background-color: rgb(var(--tab-background-color));
+    border-radius: 0.15rem;
+    height: 0.3rem;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    transition: width var(--tab-transition), left var(--tab-transition);
+}
+
+div.word.tabview.no-radius > .yui-navset.yui-navset-top > ul.yui-nav li a::after,
+div.word.tabview:is(.no-radius, .no-radius-content) > .yui-navset.yui-navset-top .yui-content {
+    border-radius: unset;
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected {
+    font-weight: normal;
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a:is(:hover, :focus)::after {
+    left: 10%;
+    width: 80%;
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a::after {
+    left: 10%;
+    width: 80%;
+    background-color: rgb(var(--word-theme-color));
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a em {
+    display: inline;
+    border: none;
+    padding: 0;
+    top: 0;
+    position: static;
+}
+
+div.word.tabview > .yui-navset.yui-navset-top .yui-content {
+    border: none;
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+    background-color: rgb(var(--tab-background-color));
+    border-radius: 0.5rem;
+}
+
+/* Table */
+div.word.table table.wiki-content-table {
+    border-collapse: separate;
+}
+
+div.word.table.wide table.wiki-content-table {
+    width: 100%;
+}
+div.word.table.long-table table.wiki-content-table > tbody > tr:has(> th):not(:has(> td)):nth-child(1) {
+    position: sticky;
+    will-change: transform;
+    transform: translateZ(0);
+    box-shadow: 0 1px 0 0 rgb(var(--basalt-UI-dark-palette));
+    top: var(--header-final-height);
+    background-color: rgb(var(--basalt-UI-dark-palette));
+    border-color: rgb(var(--basalt-UI-dark-palette));
+    z-index: 9;
+}
+
+div.word.table.style-grid-1a table.wiki-content-table > tbody > tr:nth-child(even of :not([hidden])) {
+    background-color: var(--basalt-secondary-color);
+}
+
+div.word.table.style-grid-1b table.wiki-content-table > tbody > tr:nth-child(odd of :not([hidden])) {
+    background-color: var(--basalt-secondary-color);
+}
+
+/* 版式警告 */
+div.word.word-warning-component:has( div#u-word-theme-warning) {
+    display: none;
+}
