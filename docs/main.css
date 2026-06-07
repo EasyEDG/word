@@ -68,7 +68,7 @@ div#page-content {
 }
 
 /* TOC */
-div.word.toc div#toc {
+div#page-content div.word.toc div#toc {
     position: fixed;
     will-change: transform;
     right: calc(calc(100% - var(--main-content-width)) * 0.05);
@@ -83,19 +83,19 @@ div.word.toc div#toc {
     z-index: 9;
 }
 
-div.word.toc div#toc.floatright {
+div#page-content div.word.toc div#toc.floatright {
     float: none;
     margin: 0;
 }
 
-div.word.toc div#toc.floatleft {
+div#page-content div.word.toc div#toc.floatleft {
     float: none;
     left: calc(calc(100% - var(--main-content-width)) * 0.05);
     right: unset;
     margin: 0;
 }
 
-div.word.toc.content div#toc {
+div#page-content div.word.toc.content div#toc {
     position: relative;
     right: unset;
     left: unset;
@@ -105,12 +105,12 @@ div.word.toc.content div#toc {
     background-color: rgb(var(--toc-background-color));
 }
 
-div.word.toc.content div#toc, div.word.toc.content div#toc.floatright {
+div#page-content div.word.toc.content div#toc, div.word.toc.content div#toc.floatright {
     float: right;
     right: 0;
 }
 
-div.word.toc.content:not(.no-clear-float):not(:has( div#toc.floatleft))::after {
+div#page-content div.word.toc.content:not(.no-clear-float):not(:has( div#toc.floatleft))::after {
     content: "";
     display: block;
     position: static;
@@ -119,12 +119,12 @@ div.word.toc.content:not(.no-clear-float):not(:has( div#toc.floatleft))::after {
     font-size: 1px;
 }
 
-div.word.toc.content div#toc.floatleft {
+div#page-content div.word.toc.content div#toc.floatleft {
     left: 0;
 }
 
 @media all and (max-width: 1600px) {
-    div.word.toc div#toc {
+    div#page-content div.word.toc div#toc {
         position: relative;
         right: unset;
         left: unset;
@@ -134,12 +134,12 @@ div.word.toc.content div#toc.floatleft {
         background-color: rgb(var(--toc-background-color));
     }
     
-    div.word.toc div#toc, div.word.toc div#toc.floatright {
+    div#page-content div.word.toc div#toc, div.word.toc div#toc.floatright {
         float: right;
         right: 0;
     }
     
-    div.word.toc:not(.no-clear-float):not(:has( div#toc.floatleft))::after {
+    div#page-content div.word.toc:not(.no-clear-float):not(:has( div#toc.floatleft))::after {
         content: "";
         display: block;
         position: static;
@@ -148,114 +148,114 @@ div.word.toc.content div#toc.floatleft {
         font-size: 1px;
     }
     
-    div.word.toc div#toc.floatleft {
+    div#page-content div.word.toc div#toc.floatleft {
         left: 0;
     }
 }
 
-div.word.toc table[style^="margin:0;"][style*="margin:0;"], table[style^="margin:0;"][style*="margin:0;"] :is(tbody, tr, td) {
+div#page-content div.word.toc table[style^="margin:0;"][style*="margin:0;"], table[style^="margin:0;"][style*="margin:0;"] :is(tbody, tr, td) {
     display: contents;
 }
 
-div.word.toc #toc #toc-action-bar {
+div#page-content div.word.toc #toc #toc-action-bar {
     text-align: end;
     padding: .625rem;
     width: 4em;
 }
 
-div.word.toc #toc .title {
+div#page-content div.word.toc #toc .title {
     padding: .625rem .875rem;
     font-size: 0rem;
 }
 
-div.word.toc #toc .title::before {
+div#page-content div.word.toc #toc .title::before {
     content: var(--toc-title);
     text-align: start;
     font-size: 1.05rem;
 }
 
-div.word.toc #toc-list {
+div#page-content div.word.toc #toc-list {
     padding-inline-start: 0.875rem;
 }
 
-div.word.toc #toc-list div[style] {
+div#page-content div.word.toc #toc-list div[style] {
     counter-increment: toc-num;
     position: relative;
 }
 
-div.word.toc #toc-list div[style*="1em"]::before {
+div#page-content div.word.toc #toc-list div[style*="1em"]::before {
     content: none;
 }
 
-div.word.toc #toc-list > div {
+div#page-content div.word.toc #toc-list > div {
     --toc-entry-indent: 0em;
     margin-left: 0 !important;
     margin-inline-start: var(--toc-entry-indent) !important;
 }
 
-div.word.toc #toc-list > div[style*="2em"] {
+div#page-content div.word.toc #toc-list > div[style*="2em"] {
     --toc-entry-indent: 1em
 }
 
-div.word.toc #toc-list > div[style*="3em"] {
+div#page-content div.word.toc #toc-list > div[style*="3em"] {
     --toc-entry-indent: 2em
 }
 
-div.word.toc #toc-list > div[style*="4em"] {
+div#page-content div.word.toc #toc-list > div[style*="4em"] {
     font-size: .865em;
     --toc-entry-indent: 3em
 }
 
-div.word.toc #toc-list > div[style*="5em"] {
+div#page-content div.word.toc #toc-list > div[style*="5em"] {
     font-size: .835em;
     --toc-entry-indent: 4em
 }
 
-div.word.toc #toc-list > div[style*="6em"] {
+div#page-content div.word.toc #toc-list > div[style*="6em"] {
     font-size: .775em;
     --toc-entry-indent: 5.075em
 }
 
 /* Tab View */
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav {
     font-family: var(--UI-font);
     background-color: rgb(var(--basalt-background-color));
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li {
     display: inline-block;
     position: relative;
     background-color: rgb(var(--basalt-background-color));
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a {
     color: rgb(var(--basalt-sub-text-color));
     transition: all var(--tab-transition);
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a:is(:hover, :focus) {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a:is(:hover, :focus) {
     -webkit-text-stroke: 0.3px currentColor;
     text-shadow: 0 0 0.5px currentColor;
     color: rgb(var(--basalt-sub-text-color));
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a {
     -webkit-text-stroke: 0.3px currentColor;
     text-shadow: 0 0 0.5px currentColor;
     color: rgb(var(--basalt-main-text-color));
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li::before {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li::before {
     content: none;
     display: none;
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li::after {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li::after {
     content: none;
     display: none;
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a::after {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a::after {
     content: "";
     display: block;
     background-color: rgb(var(--tab-background-color));
@@ -267,32 +267,32 @@ div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a::after {
     transition: width var(--tab-transition), left var(--tab-transition);
 }
 
-div.word.tabview.no-radius > .yui-navset.yui-navset-top > ul.yui-nav li a::after,
-div.word.tabview:is(.no-radius, .no-radius-content) > .yui-navset.yui-navset-top .yui-content {
+div#page-content div.word.tabview.no-radius > .yui-navset.yui-navset-top > ul.yui-nav li a::after,
+div#page-content div.word.tabview:is(.no-radius, .no-radius-content) > .yui-navset.yui-navset-top .yui-content {
     border-radius: unset;
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected {
     font-weight: normal;
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a:is(:hover, :focus)::after {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a:is(:hover, :focus)::after {
     left: 10%;
     width: 80%;
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a::after {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a::after {
     left: 10%;
     width: 80%;
     background-color: rgb(var(--word-theme-color));
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a:hover::after {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li.selected a:hover::after {
     left: 0;
     width: 100%;
 }
 
-div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a em {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a em {
     display: inline;
     border: none;
     padding: 0;
@@ -300,7 +300,7 @@ div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a em {
     position: static;
 }
 
-div.word.tabview > .yui-navset.yui-navset-top .yui-content {
+div#page-content div.word.tabview > .yui-navset.yui-navset-top .yui-content {
     border: none;
     padding: 0rem 1rem;
     margin-top: 1rem;
@@ -309,33 +309,54 @@ div.word.tabview > .yui-navset.yui-navset-top .yui-content {
 }
 
 /* Table */
-div.word.table table.wiki-content-table {
+div#page-content div.word.table {
+    --table-header-background-color: var(--basalt-UI-dark-palette);
+    --table-header-text-color: var(--basalt-light-text-color);
+    --table-content-border-color: var(--general-border-color);
+    --table-content-primary-color: var(--basalt-background-color);
+    --table-content-secondary-color: var(--basalt-secondary-color);
+}
+
+div#page-content div.word.table table.wiki-content-table {
     border-collapse: separate;
 }
 
-div.word.table.wide table.wiki-content-table {
+div#page-content div.word.table table.wiki-content-table > tbody > tr:not(:has(> th)) {
+    background-color: rgb(var(--table-content-primary-color));
+    border-color: rgb(var(--table-content-border-color));
+}
+
+div#page-content div.word.table table.wiki-content-table > tbody > tr:not(:has(> td)),
+div#page-content div.word.table table.wiki-content-table > tbody > tr:not(:has(> th)) > th {
+    background-color: rgb(var(--table-header-background-color));
+    border-color: rgb(var(--table-header-background-color));
+    color: rgb(var(--table-header-text-color));
+}
+
+div#page-content div.word.table.wide table.wiki-content-table {
     width: 100%;
 }
-div.word.table.long-table table.wiki-content-table > tbody > tr:has(> th):not(:has(> td)):nth-child(1) {
+
+div#page-content div.word.table.long-table table.wiki-content-table > tbody > tr:has(> th):not(:has(> td)):nth-child(1) {
     position: sticky;
     will-change: transform;
     transform: translateZ(0);
-    box-shadow: 0 1px 0 0 rgb(var(--basalt-UI-dark-palette));
+    box-shadow: 0 1px 0 0 rgb(var(--table-header-background-color));
     top: var(--header-final-height);
-    background-color: rgb(var(--basalt-UI-dark-palette));
-    border-color: rgb(var(--basalt-UI-dark-palette));
+    background-color: rgb(var(--table-header-background-color));
+    border-color: rgb(var(--table-header-background-color));
     z-index: 9;
 }
 
-div.word.table.style-grid-1a table.wiki-content-table > tbody > tr:nth-child(even of :not([hidden])) {
-    background-color: rgb(var(--basalt-secondary-color));
+div#page-content div.word.table[class~=even] table.wiki-content-table > tbody > tr:has(> td):nth-child(even of :not([hidden])) {
+    background-color: rgb(var(--table-content-secondary-color));
 }
 
-div.word.table.style-grid-1b table.wiki-content-table > tbody > tr:nth-child(odd of :not([hidden])) {
-    background-color: rgb(var(--basalt-secondary-color));
+div#page-content div.word.table[class~=odd] table.wiki-content-table > tbody > tr:has(> td):nth-child(odd of :not([hidden])) {
+    background-color: rgb(var(--table-content-secondary-color));
 }
 
 /* 版式警告 */
-div.word.word-warning-component:has( div#u-word-theme-warning) {
+div#page-content div.word.word-warning-component:has( div#u-word-theme-warning) {
     display: none;
 }
