@@ -346,11 +346,13 @@ div#page-content div.word.table.long-table table.wiki-content-table > tbody > tr
     z-index: 9;
 }
 
-div#page-content div.word.table[class~=even] table.wiki-content-table > tbody > tr:has(> td):nth-child(even of :not([hidden])) {
+div#page-content div.word.table[class~=even] table.wiki-content-table > tbody > tr:has(> td):nth-child(even of :not([hidden])),
+div#page-content div.word.table[class~=even] table.wiki-content-table > tbody > tr:has(> td):nth-child(even of :not([hidden])) > td {
     background-color: rgb(var(--table-content-secondary-color));
 }
 
-div#page-content div.word.table[class~=odd] table.wiki-content-table > tbody > tr:has(> td):nth-child(odd of :not([hidden])) {
+div#page-content div.word.table[class~=odd] table.wiki-content-table > tbody > tr:has(> td):nth-child(odd of :not([hidden])),
+div#page-content div.word.table[class~=odd] table.wiki-content-table > tbody > tr:has(> td):nth-child(odd of :not([hidden])) > td {
     background-color: rgb(var(--table-content-secondary-color));
 }
 
