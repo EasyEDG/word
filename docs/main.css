@@ -318,13 +318,14 @@ div#page-content div.word.table table.wiki-content-table {
     border-collapse: separate;
 }
 
-div#page-content div.word.table table.wiki-content-table > tbody > tr:not(:has(> th)) {
+div#page-content div.word.table table.wiki-content-table > tbody > tr:has(> td),
+div#page-content div.word.table table.wiki-content-table > tbody > tr > td {
     background-color: rgb(var(--table-content-primary-color));
     border-color: rgb(var(--table-content-border-color));
 }
 
-div#page-content div.word.table table.wiki-content-table > tbody > tr:not(:has(> td)),
-div#page-content div.word.table table.wiki-content-table > tbody > tr:not(:has(> th)) > th {
+div#page-content div.word.table table.wiki-content-table > tbody > tr:has(> th):not(:has(> td)),
+div#page-content div.word.table table.wiki-content-table > tbody > tr > th {
     background-color: rgb(var(--table-header-background-color));
     border-color: rgb(var(--table-header-background-color));
     color: rgb(var(--table-header-text-color));
