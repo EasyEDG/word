@@ -265,7 +265,7 @@ div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a
 }
 
 div#page-content div.word.tabview.no-radius > .yui-navset.yui-navset-top > ul.yui-nav li a::after,
-div#page-content div.word.tabview:is(.no-radius, .no-radius-content) > .yui-navset.yui-navset-top .yui-content {
+div#page-content div.word.tabview:is(.no-radius, .no-radius-for-tabview-content) > .yui-navset.yui-navset-top .yui-content {
     border-radius: unset;
 }
 
