@@ -298,7 +298,7 @@ div#page-content div.word.tabview > .yui-navset.yui-navset-top > ul.yui-nav li a
 }
 
 div#page-content div.word.tabview > .yui-navset.yui-navset-top .yui-content {
-    border: none;
+    border: solid .1rem rgb(var(--general-border-color));
     padding: 0rem 1rem;
     margin-top: 1rem;
     background-color: rgb(var(--tab-background-color));
