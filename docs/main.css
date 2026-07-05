@@ -335,7 +335,7 @@ div#page-content div.word.table.wide table.wiki-content-table {
     width: 100%;
 }
 
-div#page-content div.word.table.long-table table.wiki-content-table > tbody > tr:has(> th):not(:has(> td)):nth-child(1) {
+div#page-content div.word.table.sticky-table-header table.wiki-content-table > tbody > tr:has(> th):not(:has(> td)):nth-child(1) {
     position: sticky;
     will-change: transform;
     transform: translateZ(0);
